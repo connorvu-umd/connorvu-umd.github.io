@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant MVC Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Restaurant Finder</h1>
+    <p>A simple MVC example</p>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="Restaurant filters">
+      <button id="showAll" type="button">Show All Restaurants</button>
+      <button id="showTopRated" type="button">Show Top Rated</button>
+      <button id="showInexpensive" type="button">Show Inexpensive</button>
+
+      <div class="cuisine-filter">
+        <label for="cuisineFilter">Filter by cuisine:</label>
+        <select id="cuisineFilter">
+          <option value="">Choose a cuisine</option>
+          <option value="Italian">Italian</option>
+          <option value="Japanese">Japanese</option>
+          <option value="American">American</option>
+          <option value="Vietnamese">Vietnamese</option>
+          <option value="Indian">Indian</option>
+          <option value="Mexican">Mexican</option>
+        </select>
+      </div>
+    </section>
+
+    <div id="restaurantList" aria-live="polite"></div>
+  </main>
+
+  <script src="model.js"></script>
+  <script src="view.js"></script>
+  <script src="controller.js"></script>
+</body>
+</html>

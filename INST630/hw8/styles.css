@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+header {
+  background-color: #006699;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button,
+select {
+  padding: 10px 15px;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e8f2f7;
+}
+
+.cuisine-filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.restaurant-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.restaurant-card h2 {
+  color: #006699;
+  margin-top: 0;
+}
+
+.restaurant-card p {
+  margin: 8px 0;
+}
+
+.empty-message {
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
