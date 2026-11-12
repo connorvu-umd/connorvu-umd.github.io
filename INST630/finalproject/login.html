@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Appointment Scheduler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Appointment Scheduler</a>
+    <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="appointments.html">My Appointments</a><a class="active" href="login.html">Login</a></nav>
+  </header>
+  <main class="container narrow">
+    <div class="page-heading"><p class="eyebrow">WELCOME BACK</p><h1>Login</h1><p>Account functionality can be added in a later version.</p></div>
+    <section class="panel">
+      <form id="demo-login">
+        <label>Email address<input type="email" placeholder="you@example.com" required></label>
+        <label>Password<input type="password" placeholder="Password" required></label>
+        <button class="button" type="submit">Log In</button>
+        <p class="form-message" id="login-message" role="status"></p>
+      </form>
+      <p class="hint">Demo page only. Authentication is not connected to a server.</p>
+    </section>
+  </main>
+  <footer>placeholder idk what else to put</footer>
+  <script>
+    document.getElementById('demo-login').addEventListener('submit', event => {
+      event.preventDefault();
+      document.getElementById('login-message').textContent = 'Login is a placeholder in this prototype.';
+    });
+  </script>
+</body>
+</html>

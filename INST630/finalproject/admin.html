@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Appointment Scheduler</a>
+    <nav><a href="index.html">Home</a><a href="appointments.html">My Appointments</a><a class="active" href="admin.html">Admin</a></nav>
+  </header>
+  <main class="container">
+    <div class="page-heading"><p class="eyebrow">ADMINISTRATION</p><h1>Admin dashboard</h1><p>Review bookings and add available appointment slots.</p></div>
+    <section class="stats-grid">
+      <article class="stat-card"><span id="admin-total">0</span><p>Total bookings</p></article>
+      <article class="stat-card"><span id="admin-upcoming">0</span><p>Upcoming</p></article>
+      <article class="stat-card"><span id="admin-slots">0</span><p>Open slots</p></article>
+    </section>
+    <section class="panel">
+      <h2>All appointments</h2>
+      <div id="admin-appointments" class="appointment-list"></div>
+    </section>
+    <section class="panel">
+      <h2>Add availability</h2>
+      <form id="availability-form" class="form-grid">
+        <label>Date<input type="date" name="date" required></label>
+        <label>Time<input type="time" name="time" required></label>
+        <button class="button" type="submit">Add Time Slot</button>
+      </form>
+      <p class="form-message" id="availability-message" role="status"></p>
+    </section>
+  </main>
+  <footer>placeholder idk what else to put</footer>
+</body>
+</html>

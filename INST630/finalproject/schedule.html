@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Appointment</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Appointment Scheduler</a>
+    <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="appointments.html">My Appointments</a><a href="login.html">Login</a></nav>
+  </header>
+  <main class="container narrow">
+    <div class="page-heading"><p class="eyebrow">NEW BOOKING</p><h1>Book an appointment</h1><p>Select a date and time, then enter your contact information.</p></div>
+    <section class="panel">
+      <div class="section-heading"><h2>1. Select a date</h2><span class="muted">Available dates are selectable</span></div>
+      <div class="calendar-header"><button class="icon-button" id="prev-month" aria-label="Previous month">‹</button><h3 id="month-label"></h3><button class="icon-button" id="next-month" aria-label="Next month">›</button></div>
+      <div class="calendar-grid" id="calendar">
+        <span class="weekday">Sun</span><span class="weekday">Mon</span><span class="weekday">Tue</span><span class="weekday">Wed</span><span class="weekday">Thu</span><span class="weekday">Fri</span><span class="weekday">Sat</span>
+      </div>
+      <p class="hint">Dates without available appointment times are disabled.</p>
+    </section>
+    <section class="panel">
+      <div class="section-heading"><h2>2. Select a time</h2><span class="muted" id="selected-date-label">Choose a date first</span></div>
+      <div id="time-slots" class="time-slots"><p class="muted">Available times will appear here.</p></div>
+    </section>
+    <section class="panel">
+      <h2>3. Submit your information</h2>
+      <form id="booking-form">
+        <div class="form-grid">
+          <label>Full name<input name="name" required placeholder="Your name"></label>
+          <label>Email address<input name="email" type="email" required placeholder="you@example.com"></label>
+        </div>
+        <label>Reason for appointment <textarea name="reason" rows="3" placeholder="Optional"></textarea></label>
+        <button class="button" type="submit" id="confirm-button" disabled>Confirm Appointment</button>
+        <p class="form-message" id="booking-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer>Appointment Scheduler · Your time matters</footer>
+</body>
+</html>

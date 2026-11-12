@@ -1,0 +1,69 @@
+{
+  "availability": [
+    {
+      "date": "2026-11-10",
+      "times": [
+        "09:00",
+        "10:00",
+        "11:00",
+        "13:00",
+        "14:00"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "times": [
+        "09:00",
+        "11:00",
+        "13:00",
+        "15:00"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "times": [
+        "10:00",
+        "11:00",
+        "14:00"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "times": [
+        "09:00",
+        "10:00",
+        "14:00",
+        "15:00"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "times": [
+        "10:00",
+        "11:00",
+        "13:00",
+        "14:00"
+      ]
+    }
+  ],
+  "appointments": [
+    {
+      "id": "A1001",
+      "name": "Jordan Lee",
+      "email": "jordan@example.com",
+      "date": "2026-11-10",
+      "time": "09:00",
+      "reason": "Initial consultation",
+      "status": "confirmed"
+    },
+    {
+      "id": "A1002",
+      "name": "Taylor Morgan",
+      "email": "taylor@example.com",
+      "date": "2026-11-11",
+      "time": "13:00",
+      "reason": "Follow-up",
+      "status": "confirmed"
+    }
+  ]
+}
